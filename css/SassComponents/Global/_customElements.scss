@@ -1,0 +1,45 @@
+/********************************* Custom Element *********************************
+***********************************************************************************
+***********************************************************************************/
+
+
+body {
+    font-family: $RegularFont , system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-size: 16px;
+    height: 3000px;
+}
+
+a {
+    text-decoration: none;
+
+
+    font-family: $RegularFont;
+    color: #FFFFFF !important; 
+
+}
+
+.navbar-toggler {
+    &:hover , 
+    &:active ,
+    &:focus {
+        box-shadow: none;
+        border-color: transparent;
+    }
+}
+
+
+p {
+    margin-bottom: 0;
+}
+
+input {
+    &:active , 
+    &:focus {
+        box-shadow: none !important;
+        border-color: $mainColor;
+    }
+}
+
+/********************************* End Global *********************************
+***********************************************************************************
+***********************************************************************************/

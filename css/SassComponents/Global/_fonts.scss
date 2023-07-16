@@ -1,0 +1,22 @@
+/********************************* Fonts *********************************
+***********************************************************************************
+***********************************************************************************/
+
+/* Font Name : din-next-lt-w23 */
+
+@import './variables';
+
+@font-face {
+    font-family: $RegularFont;
+    src: url("../webfonts/neo-sans-arabic-cufonfonts/Neo\ Sans\ Arabic\ Regular.ttf");
+}
+
+@font-face {
+    font-family: $boldFont;
+    src: url("../webfonts/neo-sans-arabic-cufonfonts/NeoSansArabicBold.ttf");
+}
+
+@font-face {
+    font-family: $TajawalReg;
+    src: url("../webfonts/Tajawal/Tajawal-Regular.ttf");
+}

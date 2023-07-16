@@ -1,0 +1,356 @@
+/********************************* Variables *********************************
+***********************************************************************************
+***********************************************************************************/
+/********************************* Fonts *********************************
+***********************************************************************************
+***********************************************************************************/
+/* Font Name : din-next-lt-w23 */
+/********************************* Variables *********************************
+***********************************************************************************
+***********************************************************************************/
+@font-face {
+  font-family: "regular";
+  src: url("../webfonts/neo-sans-arabic-cufonfonts/Neo Sans Arabic Regular.ttf");
+}
+@font-face {
+  font-family: "bold";
+  src: url("../webfonts/neo-sans-arabic-cufonfonts/NeoSansArabicBold.ttf");
+}
+@font-face {
+  font-family: "Tajawal-regular";
+  src: url("../webfonts/Tajawal/Tajawal-Regular.ttf");
+}
+/********************************* Custom Element *********************************
+***********************************************************************************
+***********************************************************************************/
+body {
+  font-family: "regular", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-size: 16px;
+  height: 3000px;
+}
+
+a {
+  text-decoration: none;
+  font-family: "regular";
+  color: #FFFFFF !important;
+}
+
+.navbar-toggler:hover, .navbar-toggler:active, .navbar-toggler:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+input:active, input:focus {
+  box-shadow: none !important;
+  border-color: #01185C;
+}
+
+/********************************* End Global *********************************
+***********************************************************************************
+***********************************************************************************/
+.topBar {
+  padding: 10px;
+  background-color: #01185C;
+}
+.topBar .icons svg, .topBar .icons i {
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+  .topBar .text {
+    font-size: 14px !important;
+  }
+  .topBar .icons svg, .topBar .icons i {
+    font-size: 14px;
+  }
+}
+.top-Information {
+  padding: 30px 0;
+}
+.top-Information .top-information-item .item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.top-Information .top-information-item .item:hover .icon, .top-Information .top-information-item .item:active .icon, .top-Information .top-information-item .item:focus .icon {
+  background-color: #01185C;
+  border: 1px solid #fff;
+}
+.top-Information .top-information-item .item:hover .icon svg, .top-Information .top-information-item .item:hover .icon i, .top-Information .top-information-item .item:active .icon svg, .top-Information .top-information-item .item:active .icon i, .top-Information .top-information-item .item:focus .icon svg, .top-Information .top-information-item .item:focus .icon i {
+  color: #fff;
+}
+.top-Information .top-information-item .item .icon {
+  transition: all 0.2s ease;
+  border: 1px dashed #929292;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 8px;
+  border-bottom-right-radius: 0;
+}
+.top-Information .top-information-item .item .icon svg, .top-Information .top-information-item .item .icon i {
+  color: #929292;
+  font-size: 25px;
+  transition: all 0.2s ease;
+}
+.top-Information .top-information-item .item .body .desc {
+  color: #758494;
+}
+.top-Information .top-information-item .item .body .head {
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .top-Information {
+    padding: 15px !important;
+  }
+}
+.text {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.custom-navbar {
+  background-color: #E8E8E8;
+  padding: 0;
+}
+.custom-navbar .navbar-nav .nav-item .nav-link {
+  color: #01185C !important;
+  font-size: 18px;
+  border-top: 3px solid transparent;
+  padding: 15px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+.custom-navbar .navbar-nav .nav-item .nav-link.active {
+  border-color: #01185C;
+}
+.custom-navbar .navbar-nav .nav-item .nav-link.active::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border: 10px solid transparent;
+  border-top-color: #01185C;
+}
+.custom-navbar .custom-dropdown .dropdown-menu::after {
+  content: "";
+  border: 10px solid transparent;
+  border-bottom-color: #fff;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  transform: translate(-50%, 0);
+}
+.custom-navbar .custom-dropdown .dropdown-menu li {
+  border-bottom: 1px solid #eef0ea;
+}
+.custom-navbar .custom-dropdown .dropdown-menu li .dropdown-item {
+  color: #01185C !important;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  font-family: "Tajawal-regular";
+  font-size: 18px;
+}
+.custom-navbar .custom-dropdown .dropdown-menu li .dropdown-item:active, .custom-navbar .custom-dropdown .dropdown-menu li .dropdown-item:focus {
+  background-color: #01185C;
+  color: #fff !important;
+}
+.custom-navbar .custom-dropdown .dropdown-menu li .dropdown-item::before {
+  content: "";
+  background-image: url("../images/navbar-list.png");
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 23px;
+  display: inline-block;
+}
+.custom-navbar .form-nav {
+  position: relative;
+}
+.custom-navbar .form-nav button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  padding: 0;
+}
+.custom-navbar .form-nav input {
+  padding-right: 30px;
+}
+.custom-navbar .form-nav .search-nav {
+  position: relative;
+}
+
+.custom-offcanvas {
+  background-color: #E8E8E8;
+}
+.custom-offcanvas .offcanvas-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.custom-offcanvas .offcanvas-header .btn-close {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.custom-offcanvas .offcanvas-header .btn-close:active, .custom-offcanvas .offcanvas-header .btn-close:focus {
+  box-shadow: none;
+}
+.custom-offcanvas .custom-navbar .nav-item:last-of-type .nav-link {
+  border-bottom-color: transparent;
+}
+.custom-offcanvas .custom-navbar .nav-link {
+  border-bottom: 1px solid #c9c9c9;
+}
+.custom-offcanvas .custom-navbar .nav-link.active {
+  border-color: #c9c9c9 !important;
+  border-top: none !important;
+}
+.custom-offcanvas .custom-navbar .nav-link.active::after {
+  display: none;
+}
+.custom-offcanvas .custom-navbar .nav-link:hover, .custom-offcanvas .custom-navbar .nav-link:active, .custom-offcanvas .custom-navbar .nav-link:focus {
+  background-color: #01185C;
+  color: #fff !important;
+}
+
+.custom-swiper {
+  position: static !important;
+}
+
+.header-slider {
+  background-image: url("../images/slider.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-slider .overlay {
+  padding: 30px 0;
+  background-color: rgba(1, 24, 92, 0.74);
+  width: 100%;
+  position: relative;
+}
+.header-slider .custom-swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header-slider .custom-swiper-slide .custom-head {
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 15px;
+  font-family: "bold";
+}
+.header-slider .custom-swiper-slide .slider-desc {
+  line-height: 1.7;
+  color: #fff;
+  font-size: 16px;
+}
+.header-slider .custom-swiper-slide .more {
+  color: #fff;
+  margin: 20px 0;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.header-slider .custom-swiper-slide .more:active, .header-slider .custom-swiper-slide .more:focus {
+  box-shadow: none;
+}
+.header-slider .custom-swiper-slide .more .keyword {
+  position: relative;
+}
+.header-slider .custom-swiper-slide .more .keyword::after, .header-slider .custom-swiper-slide .more .keyword::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  display: inline-block;
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+}
+.header-slider .custom-swiper-slide .more .keyword::before {
+  content: "";
+  bottom: -10px;
+  width: 80%;
+  right: 50%;
+  transform: translate(50%, 0);
+}
+.header-slider .swiper-button-prev, .header-slider .swiper-button-next {
+  font-size: 20px;
+  position: absolute;
+  bottom: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 100px;
+  height: 50px;
+  border: 2px solid #fff;
+  transition: all 0.2s ease;
+}
+.header-slider .swiper-button-prev:hover, .header-slider .swiper-button-next:hover {
+  width: 130px;
+  border-color: #fff;
+}
+.header-slider .swiper-button-prev::after, .header-slider .swiper-button-next::after {
+  background-image: url("../images/navbar-list.png");
+  background-repeat: no-repeat;
+  background-position: center left;
+  content: "" !important;
+  width: 30px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-slider .swiper-button-prev {
+  flex-direction: row-reverse;
+  border-left-color: transparent;
+}
+.header-slider .swiper-button-prev::after {
+  transform: rotate(180deg) !important;
+}
+.header-slider .swiper-button-next {
+  border-right-color: transparent;
+  transition: all 0.2s ease;
+}
+
+.swiper {
+  width: 100%;
+  height: 500px;
+}
+
+.swiper-pagination-bullet {
+  background-color: transparent !important;
+  color: rgba(255, 255, 255, 0.44);
+  font-size: 30px;
+  margin-left: 10px;
+  display: inline-block;
+  width: auto !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: transparent !important;
+  color: #fff;
+}
+
+.custom-swiper-pagination {
+  bottom: 25px !important;
+}/*# sourceMappingURL=style.css.map */
