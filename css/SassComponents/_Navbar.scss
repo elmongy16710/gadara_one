@@ -86,6 +86,23 @@
     .top-Information {
         padding: 15px !important;
     }
+    .about_features {
+        margin-top: 20px !important;
+        .item {
+            .icon {
+            }
+            .count {
+                font-size: 22px !important;
+            }
+            .title {
+                font-size: 18px !important;
+            }
+    
+        }
+    }
+    .about {
+        padding: 50px 0 !important;
+    }
 }
 
 
@@ -195,11 +212,18 @@
 
 .custom-offcanvas {
     background-color: $secondColor;
+    width: 90%;
+    height: 100vh;
     .offcanvas-header {
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
+        .logo {
+            img {
+                width: 60%;
+            }
+        }
         .btn-close {
             position: absolute;
             top: 15px;
@@ -392,4 +416,39 @@
 
 .custom-swiper-pagination {
     bottom: 25px !important;
+}
+
+
+
+.about{
+    padding: 80px 0;
+    background-image: url("../images/about_top.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    .about_features {
+        margin-top: 25px;
+        .item {
+            text-align: center;
+            .icon {
+                margin-bottom: 10px;
+            }
+            .count {
+                font-size: 35px;
+                color: #929292;
+                font-family: $boldFont;
+            }
+            .title {
+                color: $mainColor;
+                font-size: 25px;
+            }
+    
+        }
+    }
+}
+
+
+@media(max-width : 768px) {
+    .custom-swiper-slide .custom-head {
+        font-size: 22px !important;
+    }
 }

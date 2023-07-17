@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>ProjectName</title>
+    <title>الخريف للتشغيل والصيانة</title>
     <!-- Css Filse -->
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./css/fontAwesome/all.min.css">
@@ -20,6 +20,7 @@
 
 <body>
 
+    <!-- Header -->
     <header>
         <!-- topBar -->
         <div class="topBar">
@@ -55,8 +56,8 @@
                     </div>
                     <!-- Bar Icon -->
                     <div class="test col-9 text-end d-lg-none">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" href="#offcanvasExample"
-                            role="button" aria-controls="offcanvasExample">
+                        <button  data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" class="navbar-toggler" type="button"
+                            role="button" >
                             <i class="fas fa-bars"></i>
                         </button>
                     </div>
@@ -129,10 +130,10 @@
                             <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">عن الخريف</a>
+                            <a class="nav-link" href="./about.html">عن الخريف</a>
                         </li>
                         <li class="nav-item dropdown custom-dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 خدماتنا
                             </a>
@@ -196,8 +197,7 @@
         </nav>
         <!-- End Navbar -->
         <!-- Sidebar -->
-        <div class="offcanvas custom-offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas custom-offcanvas offcanvas-start"  data-bs-scroll="true" data-bs-backdrop="false"   tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel" >
             <div class="offcanvas-header">
                 <div class="logo">
                     <img src="./images/logo.svg" alt="logo">
@@ -266,7 +266,7 @@
                             <!-- Slider main container -->
                             <div class="swiper custom-swiper">
                                 <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper">
+                                <div class="swiper-wrapper custom-swiper-wrapper">
                                     <!-- Slides -->
                                     <div class="swiper-slide custom-swiper-slide">
                                         <h2 class="custom-head">الخريّف للتشغيل والصيانة</h2>
@@ -333,8 +333,598 @@
         </div>
         <!-- End Slider  -->
     </header>
+    <!-- End Header -->
 
 
+
+    <main>
+            <!-- About Us -->
+    <div class="about py">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <div class="about_head">
+                        <h2 class="custom-heading">
+                            ماذا تعرف عن الخريّف
+                        </h2>
+                        <div class="desc">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                            المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص هو مثال لنص
+                            يمكن أن يستبدل في نفس المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                            المساحةهذا النص هو مثال لنص
+                        </div>
+                    </div>
+                    <div class="about_features">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="item">
+                                    <div class="icon">
+                                        <img src="./images/1.svg" alt="photo">
+                                    </div>
+                                    <div class="count">
+                                        +34
+                                    </div>
+                                    <div class="title">مقاول</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="item">
+                                    <div class="icon">
+                                        <img src="./images/2.svg" alt="photo">
+                                    </div>
+                                    <div class="count">
+                                        +34
+                                    </div>
+                                    <div class="title">مشروع تم تنفيذة</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="item">
+                                    <div class="icon">
+                                        <img src="./images/3.svg" alt="photo">
+                                    </div>
+                                    <div class="count">
+                                        +45
+                                    </div>
+                                    <div class="title">عميل </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="image_c">
+                        <img class="w-100" src="./images/996.png" alt="photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About Us -->
+    <!-- services -->
+    <div class="services py">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="custom-heading">
+                        خدمات الخريف
+                    </h2>
+                </div>
+                <div class="col-12 mt-3">
+                    <ul class="nav nav-tabs custom-nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                                aria-selected="true">التشغيل</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">الصيانة</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                aria-controls="contact-tab-pane" aria-selected="false">الدعم اللوجستى</button>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="col-12 mt-5">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-7 col-12">
+                                    <h2 class="custom-heading small">التشغيل</h2>
+                                    <p class="desc list">
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص هو مثال لنص يمكن أن
+                                        يستبدل في نفس المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                        المساحةهذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                                    </p>
+                                    <p class="desc list">
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص هو مثال لنص يمكن أن
+                                        يستبدل في نفس المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                        المساحةهذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                                    </p>
+                                    <button class="custom-btn my-3">
+
+                                        معرفة المزيد
+                                        <i class="fas fa-chevron-left"></i>
+                                    </button>
+                                </div>
+                                <div class="col-lg-5 col-12">
+                                    <div class="img">
+                                        <img src="./images/servi.svg" alt="photo" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-7 col-12">
+                                    <h2 class="custom-heading small">الصيانة</h2>
+                                    <p class="desc list">
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص هو مثال لنص يمكن أن
+                                        يستبدل في نفس المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                        المساحةهذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                                    </p>
+                                    <p class="desc list">
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص هو مثال لنص يمكن أن
+                                        يستبدل في نفس المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                        المساحةهذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                                    </p>
+                                    <button class="custom-btn my-3">
+
+                                        معرفة المزيد
+                                        <i class="fas fa-chevron-left"></i>
+                                    </button>
+                                </div>
+                                <div class="col-lg-5 col-12">
+                                    <div class="img">
+                                        <img src="./images/servi.svg" alt="photo" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-7 col-12">
+                                    <h2 class="custom-heading small">الدعم اللوجستى</h2>
+                                    <p class="desc list">
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص هو مثال لنص يمكن أن
+                                        يستبدل في نفس المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                        المساحةهذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                                    </p>
+                                    <p class="desc list">
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص هو مثال لنص يمكن أن
+                                        يستبدل في نفس المساحة في مكان واحد،هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                        المساحةهذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                                    </p>
+                                    <button class="custom-btn my-3">
+
+                                        معرفة المزيد
+                                        <i class="fas fa-chevron-left"></i>
+                                    </button>
+                                </div>
+                                <div class="col-lg-5 col-12">
+                                    <div class="img">
+                                        <img src="./images/servi.svg" alt="photo" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End services Us -->
+    <!-- Management -->
+    <div class="Management py">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <h2 class="custom-heading">
+                        الإدارات
+                    </h2>
+                </div>
+                <div class="col-12">
+                    <!-- Slider main container -->
+                    <div class="swiper Management-swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="slide-item">
+                                            <div class="info">
+                                                <h4>
+                                                    الادارة المالية
+                                                </h4>
+                                                <p class="text">
+                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص
+                                                </p>
+                                                <a href="">
+                                                    <div class="custom-btn">
+                                                        إقرأ المزيد
+                                                        <i class="fas fa-chevron-left"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="image">
+                                                <img src="./images//item_1.png" alt="image" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 d-none d-md-block">
+                                        <div class="slide-item">
+                                            <div class="info">
+                                                <h4>
+                                                    الادارة المالية
+                                                </h4>
+                                                <p class="text">
+                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص
+                                                </p>
+                                                <a href="">
+                                                    <div class="custom-btn">
+                                                        إقرأ المزيد
+                                                        <i class="fas fa-chevron-left"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="image">
+                                                <img src="./images/item_2.png" alt="image" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 d-none d-md-block">
+                                        <div class="slide-item">
+                                            <div class="info">
+                                                <h4>
+                                                    الادارة المالية
+                                                </h4>
+                                                <p class="text">
+                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص
+                                                </p>
+                                                <a href="">
+                                                    <div class="custom-btn">
+                                                        إقرأ المزيد
+                                                        <i class="fas fa-chevron-left"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="image">
+                                                <img src="./images/item_3.png" alt="image" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 d-none d-md-block">
+                                        <div class="slide-item">
+                                            <div class="info">
+                                                <h4>
+                                                    الادارة المالية
+                                                </h4>
+                                                <p class="text">
+                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص
+                                                </p>
+                                                <a href="">
+                                                    <div class="custom-btn">
+                                                        إقرأ المزيد
+                                                        <i class="fas fa-chevron-left"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="image">
+                                                <img src="./images/item_2.png" alt="image" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 d-none d-md-block">
+                                        <div class="slide-item">
+                                            <div class="info">
+                                                <h4>
+                                                    الادارة المالية
+                                                </h4>
+                                                <p class="text">
+                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص
+                                                </p>
+                                                <a href="">
+                                                    <div class="custom-btn">
+                                                        إقرأ المزيد
+                                                        <i class="fas fa-chevron-left"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="image">
+                                                <img src="./images//item_1.png" alt="image" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 d-none d-md-block">
+                                        <div class="slide-item">
+                                            <div class="info">
+                                                <h4>
+                                                    الادارة المالية
+                                                </h4>
+                                                <p class="text">
+                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص
+                                                </p>
+                                                <a href="">
+                                                    <div class="custom-btn">
+                                                        إقرأ المزيد
+                                                        <i class="fas fa-chevron-left"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="image">
+                                                <img src="./images/item_3.png" alt="image" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="slide-item">
+                                            <div class="info">
+                                                <h4>
+                                                    الادارة المالية
+                                                </h4>
+                                                <p class="text">
+                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص
+                                                </p>
+                                                <a href="">
+                                                    <div class="custom-btn">
+                                                        إقرأ المزيد
+                                                        <i class="fas fa-chevron-left"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="image">
+                                                <img src="./images//item_1.png" alt="image" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 d-none d-md-block">
+                                        <div class="slide-item">
+                                            <div class="info">
+                                                <h4>
+                                                    الادارة المالية
+                                                </h4>
+                                                <p class="text">
+                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص
+                                                </p>
+                                                <a href="">
+                                                    <div class="custom-btn">
+                                                        إقرأ المزيد
+                                                        <i class="fas fa-chevron-left"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="image">
+                                                <img src="./images/item_2.png" alt="image" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 d-none d-md-block">
+                                        <div class="slide-item">
+                                            <div class="info">
+                                                <h4>
+                                                    الادارة المالية
+                                                </h4>
+                                                <p class="text">
+                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص
+                                                </p>
+                                                <a href="">
+                                                    <div class="custom-btn">
+                                                        إقرأ المزيد
+                                                        <i class="fas fa-chevron-left"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="image">
+                                                <img src="./images/item_3.png" alt="image" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 d-none d-md-block">
+                                        <div class="slide-item">
+                                            <div class="info">
+                                                <h4>
+                                                    الادارة المالية
+                                                </h4>
+                                                <p class="text">
+                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص
+                                                </p>
+                                                <a href="">
+                                                    <div class="custom-btn">
+                                                        إقرأ المزيد
+                                                        <i class="fas fa-chevron-left"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="image">
+                                                <img src="./images/item_2.png" alt="image" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 d-none d-md-block">
+                                        <div class="slide-item">
+                                            <div class="info">
+                                                <h4>
+                                                    الادارة المالية
+                                                </h4>
+                                                <p class="text">
+                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص
+                                                </p>
+                                                <a href="">
+                                                    <div class="custom-btn">
+                                                        إقرأ المزيد
+                                                        <i class="fas fa-chevron-left"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="image">
+                                                <img src="./images//item_1.png" alt="image" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 d-none d-md-block">
+                                        <div class="slide-item">
+                                            <div class="info">
+                                                <h4>
+                                                    الادارة المالية
+                                                </h4>
+                                                <p class="text">
+                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحةهذا النص
+                                                </p>
+                                                <a href="">
+                                                    <div class="custom-btn">
+                                                        إقرأ المزيد
+                                                        <i class="fas fa-chevron-left"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="image">
+                                                <img src="./images/item_3.png" alt="image" class="w-100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-buttons d-none d-md-block">
+                            <div class="swiper-button-prev">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                            <div class="swiper-button-next">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Management  -->
+    <!-- Our Customers -->
+    <div class="our_customers py">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <h2 class="custom-heading">شركاؤنا</h2>
+                </div>
+                <div class="col-12">
+                    <div class="our_cus_items">
+                        <div class="item">
+                            <div class="logo">
+                                <img src="./images/company1.svg" alt="company">
+                            </div>
+                            <div class="title">
+                                إسم الشركة
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="logo">
+                                <img src="./images/company2.svg" alt="company">
+                            </div>
+                            <div class="title">
+                                إسم الشركة
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="logo">
+                                <img src="./images/company3.svg" alt="company">
+                            </div>
+                            <div class="title">
+                                إسم الشركة
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="logo">
+                                <img src="./images/company4.svg" alt="company">
+                            </div>
+                            <div class="title">
+                                إسم الشركة
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Our Customers -->
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer ">
+        <div class="overlay py">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="logo_footer">
+                            <img src="./images/footer_logo.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col-12 text-center mt-3">
+                        <div class="footer-nav">
+                            <a href="#" class="nav-link">
+                                الرئيسية
+                            </a>
+                            <a href="#" class="nav-link">
+                                عن الخريف
+                            </a>
+                            <a href="#" class="nav-link">
+                                خدماتنا
+                            </a>
+                            <a href="#" class="nav-link">
+                                الإدارات
+                            </a>
+                            <a href="#" class="nav-link">
+                                التوظيف
+                            </a>
+                            <a href="#" class="nav-link">
+                                إتصل بنا
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright-inside">
+                    <div>
+                        <span>صنع بكل حب </span>
+                        <i class="fas fa-heart"></i>
+                        <span>فى معامل جدارة</span>
+                    </div>
+                    <div>
+                        <span>جميع الحقوق محفوظة
+                            &copy;
+                            لدى شركة الخريف
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
 
     <!-- Js Files -->
 

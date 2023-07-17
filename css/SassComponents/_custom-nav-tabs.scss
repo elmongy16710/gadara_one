@@ -1,0 +1,39 @@
+.custom-nav-tabs {
+    border-bottom: 0;
+    justify-content: center;
+    align-items: center;
+
+    .nav-link{
+            background-color: $secondColor;
+            border-radius: 0;
+            padding: 15px 20px;
+            font-size: 18px;
+            color: $mainColor;
+            transition: all .2 ease;
+            position: relative;
+            width: 200px;
+
+        &.active {
+            color: $whiteColor;
+            background-color: $mainColor;
+            &::after {
+                position: absolute;
+                bottom: -20px;
+                left: 50%;
+                transform: translate(-50% , 0);
+                content: "";
+                border: 10px solid transparent;
+                border-top-color: $mainColor;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width : 767px) {
+    .custom-nav-tabs .nav-link {
+        font-size: 16px !important;
+        width: auto !important;
+    }
+}
